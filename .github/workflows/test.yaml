@@ -1,0 +1,10 @@
+name: Test
+on: [push]
+
+jobs:
+  someJob:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: cachix/install-nix-action@v27
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
